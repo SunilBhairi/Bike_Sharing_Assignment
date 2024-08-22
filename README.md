@@ -45,11 +45,11 @@ The primary objective is to identify the key variables that significantly influe
 ## Conclusions
 
 - The equation of the best fit line is given by:
-  - **_cnt_** = 4491.30 + 998.75 x **_yr_** + 178.28 x **_workingday_** + 1174.49 x **_temp_** - 429.07 x **_hum_** - 349.15 x **_windspeed_** + 344.84 x **_Summer_** + 526.80 x **_Winter_** + 234.70 x **_September_** + 159.98 x **_Sunday_**
+  - **_cnt_**  = (0.0805) + (yr * 0.2336) - (holiday * 0.1062) + (temp * 0.5175) - (windspeed * 0.1609) + (weathersit_Clear * 0.0809) -(weathersit_Light_Snow * 0.2100) + (season_summer * 0.0795) + (season_winter * 0.1207) + (mnth_sept * 0.0970) - (weekday_sun * 0.0502)**
 - The close alignment of R2 and adjusted R2 values between the training and test sets (R2: 0.810 vs. 0.800 and Adjusted R2: 0.810 vs. 0.800) in a linear regression model indicates effective generalization. This similarity suggests the model avoids overfitting to the training data and is likely to perform consistently on new, unseen data.
-- Bike demand is influenced by features such as **yr**, **workingday**, **temp**, **hum**, **windspeed**, **Summer**, **Winter**, **September**, and **Sunday**.
-- Three key feature variables, **temp**, **yr**, and **Winter**, exhibit the highest coefficient values, indicating their significant impact.
-- The RMSE values of **844** in the training set and **839** in the test set for a linear regression model indicate that the model is fitting well to the training data and generalizing reasonably to new, unseen data with a small difference between training and test set performance.
+- Bike demand is influenced by features such as **yr**, **holiday**, **temp**, **windspeed**, **weathersit_Clear**, **weathersit_Light_Snow**, **season_summer** , **season_winter**,**mnth_sept** and **weekday_sun**
+- Three key feature variables, **temp**, **yr**, and **seasonWinter**, exhibit the highest coefficient values, indicating their significant impact.
+- The RMSE values of **0** in the training set and **0** in the test set for a linear regression model indicate that the model is fitting well to the training data and generalizing reasonably to new, unseen data with a small difference between training and test set performance.
 
 ## Recommendations
 
@@ -59,7 +59,7 @@ The primary objective is to identify the key variables that significantly influe
 
 - **Optimize Operational Planning:** Adjust bike availability and distribution based on the significant features identified, optimizing resources for peak demand periods.
 
-- **User Engagement on Weekends:** Capitalize on increased demand on **Sunday** by introducing special promotions or events to encourage bike usage during weekends.
+- **User Engagement on Weekends:** Capitalize on increased demand on **Weekdays** by introducing special promotions or events to encourage bike usage during weekends.
 
 - **Weather-Sensitive Promotions:** Implement weather-specific promotions or incentives to encourage bike usage during favorable weather conditions, addressing the impact of **temp**, **hum**, and **windspeed**.
 
@@ -77,11 +77,6 @@ The primary objective is to identify the key variables that significantly influe
 - [Statsmodels](https://www.statsmodels.org/stable/index.html) - version 0.14.0
 - [Scikit-Learn](https://scikit-learn.org/stable/) - version 1.3.0
 
-## Acknowledgements
-
-- This project was inspired by live session of upGrad on Industry Relevance of Linear Regression Models by [Shivam Garg](https://www.linkedin.com/in/shivam-garg-0494a2ab/)
-- UpGrad tutorials on Linear Regression on the learning platform
-
 ## Contact
 
-Created by [@akashkriplani](https://github.com/akashkriplani)
+Created by **Sunil Bhairi**
