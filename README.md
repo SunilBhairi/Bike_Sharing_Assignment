@@ -22,10 +22,10 @@ You are required to model the demand for shared bikes with the available indepen
 ## Table of Contents
 
 - [General Info](#general-information)
-- [Technologies Used](#technologies-used)
 - [Conclusions](#conclusions)
 - [Recommendations](#recommendations)
 - [Acknowledgements](#acknowledgements)
+- [Technologies Used](#technologies-used)
 
 <!-- You can include any other section that is pertinent to your problem -->
 
