@@ -45,10 +45,10 @@ The primary objective is to identify the key variables that significantly influe
 ## Conclusions
 
 - The equation of the best fit line is given by:
-**cnt** = (0.0753) + (yr * 0.2331) + (workingday * 0.0563) + (temp * 0.5499) - (windspeed * 0.1552) - (weathersit_Mist_cloudy * 0.0813) -(weathersit_Light_Snow * 0.2880) + (season_summer * 0.0874) + (season_winter * 0.1318) + (mnth_sept * 0.0972) + (weekday_sat * 0.0677)
+**cnt** = (0.0839) + (yr * 0.2337) + (temp * 0.5719) - (windspeed * 0.1474) - (weathersit_Light_Snow * 0.2502) + (season_summer * 0.0824) + (season_winter * 0.1251) + (mnth_sept * 0.0868) 
 
-- The close alignment of R2 and adjusted R2 values between the training and test sets (R2: 0.8358 vs. 0.795) in a linear regression model indicates effective generalization. This similarity suggests the model avoids overfitting to the training data and is likely to perform consistently on new, unseen data.
-- Bike demand is influenced by features such as **yr**, **workingday**, **temp**, **windspeed**, **weathersit_Mist_cloudy**, **weathersit_Light_Snow**, **season_summer** , **season_winter**,**mnth_sept** and **weekday_sat**
+- The close alignment of R2 and adjusted R2 values between the training and test sets (R2: 0.8001 vs. 0.7677) in a linear regression model indicates effective generalization. This similarity suggests the model avoids overfitting to the training data and is likely to perform consistently on new, unseen data.
+- Bike demand is influenced by features such as **yr**, **temp**, **windspeed**, **weathersit_Light_Snow**, **season_summer** , **season_winter**, **mnth_sept** 
 - Three key feature variables, **temp**, **yr**, and **seasonWinter**, exhibit the highest coefficient values, indicating their significant impact.
 - The RMSE values of **0** in the training set and **0** in the test set for a linear regression model indicate that the model is fitting well to the training data and generalizing reasonably to new, unseen data with a small difference between training and test set performance.
 
@@ -70,13 +70,13 @@ The primary objective is to identify the key variables that significantly influe
 
 ## Technologies Used
 
-- [Python](https://www.python.org/) - version 3.11.4
-- [Matplotlib](https://matplotlib.org/) - version 3.7.1
-- [Numpy](https://numpy.org/) - version 1.24.3
-- [Pandas](https://pandas.pydata.org/) - version 1.5.3
-- [Seaborn](https://seaborn.pydata.org/) - version 0.12.2
-- [Statsmodels](https://www.statsmodels.org/stable/index.html) - version 0.14.0
-- [Scikit-Learn](https://scikit-learn.org/stable/) - version 1.3.0
+- [Python](https://www.python.org/) - version 3.12.1
+- [Matplotlib](https://matplotlib.org/) - version 3.9.0
+- [Numpy](https://numpy.org/) - version 1.26.4
+- [Pandas](https://pandas.pydata.org/) - version 2.2.2
+- [Seaborn](https://seaborn.pydata.org/) - version 0.13.2
+- [Statsmodels](https://www.statsmodels.org/stable/index.html) - version 0.14.2
+- [Scikit-Learn](https://scikit-learn.org/stable/) - version 1.5.0
 
 ## Contact
 
